@@ -1,0 +1,22 @@
+//FIND MISSING NUMBER IN ARRAY
+//int[] arr ={1,2,3,4,5,6,8,9,10};//7//
+
+public class ARRAY_MISSINGNUMBER {
+    public static void main(String[] args) {
+        ARRAY_MISSINGNUMBER main = new ARRAY_MISSINGNUMBER();
+        int [] intarr ={1,2,3,4,5,6,8,9,10};
+        main.missingnumber(intarr);
+
+    }public void missingnumber(int [] intarr){
+        int sum1 =0;
+        int sum2 =0;
+        for(int i : intarr){
+            sum1+=i;
+        }
+        sum2 = 10*(10+1)/2;
+        int difference;
+        difference = sum2 -sum1;
+        System.out.println("the missing number in arr is " + difference);
+
+    }
+    }
